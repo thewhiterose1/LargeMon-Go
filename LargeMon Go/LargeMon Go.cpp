@@ -2,11 +2,10 @@
 //
 
 #include "stdafx.h"
-
+#include "LargeMon.cpp"
 
 int main()
 {
-	cout << "Test";
+	LargeMon* myLargeMon = new LargeMon(2, 20, 200);
     return 0;
 }
-
