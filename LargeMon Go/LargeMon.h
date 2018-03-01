@@ -5,6 +5,14 @@
 
 using namespace std;
 
+/*!
+A class header for the definition of individual LargeMons. Adheres to the private class data pattern in that 
+individual attributes cannot be modified once initialised, and are only accesssible through getter methods.
+
+@author Jeremy Hotham
+@date 01/03/2018
+*/
+
 class LargeMon
 {
 public:
