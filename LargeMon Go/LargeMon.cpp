@@ -1,9 +1,14 @@
 #include "stdafx.h"
+#include <iostream>
 #include "LargeMon.h"
+#include <string>
 
-LargeMon::LargeMon(int size, int attackPoints, int health)
+using namespace std;
+
+LargeMon::LargeMon(string type, string name, string description, string antagonist, int size, int attackPoints, int health)
 {
-	size = attackPoints = health = 0;
+	cout << "This is inside the LargeMon constructor";
+	cin >> type;
 }
 
 

@@ -2,10 +2,13 @@
 //
 
 #include "stdafx.h"
-#include "LargeMon.cpp"
+#include <iostream>
+#include "LargeMon.h"
+
+using namespace std;
 
 int main()
 {
-	LargeMon* myLargeMon = new LargeMon(2, 20, 200);
+	LargeMon* myLargeMon = new LargeMon("Fire", "Fire Large Mon", "A powerful fire LargeMon", "Water", 2, 20, 200);
     return 0;
 }
