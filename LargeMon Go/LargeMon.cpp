@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Constructor
+// Constructors
 
 LargeMon::LargeMon(string ntype, string nname, string ndescription, string nantagonist, int nsize, int nattackPoints, int nhealth)
 {
@@ -15,6 +15,11 @@ LargeMon::LargeMon(string ntype, string nname, string ndescription, string nanta
 	size = nsize;
 	attackPoints = nattackPoints;
 	health = nhealth;
+}
+
+LargeMon::LargeMon()
+{
+
 }
 
 // Getter methods
