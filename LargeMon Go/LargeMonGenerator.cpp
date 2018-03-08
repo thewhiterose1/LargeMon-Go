@@ -6,12 +6,12 @@ LargeMonGenerator::LargeMonGenerator()
 {
 }
 
-
 LargeMonGenerator::~LargeMonGenerator()
 {
 }
 
 bool LargeMonGenerator::generateLargeMon()
 {
+	LargeMon* tempMon = new LargeMon();
 	return true;
 }
