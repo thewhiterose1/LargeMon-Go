@@ -22,6 +22,11 @@ LargeMon::LargeMon()
 
 }
 
+LargeMon::LargeMon(int nhealth)
+{
+	health = nhealth;
+}
+
 // Getter methods
 
 string LargeMon::getType() { return type; }

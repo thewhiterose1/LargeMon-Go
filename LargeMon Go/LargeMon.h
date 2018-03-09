@@ -18,6 +18,7 @@ class LargeMon
 public:
 	LargeMon(string, string, string, string, int, int, int);
 	LargeMon();
+	LargeMon(int);
 	~LargeMon();
 	map<char, char> anatagonists = {
 		{ 'F', 'W' },
