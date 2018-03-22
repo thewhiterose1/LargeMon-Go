@@ -10,5 +10,6 @@ public:
 	static bool deleteAllLargeMon();
 	static bool deleteByName(string);
 	static bool nameUnique(string);
+	static bool noLargeMons();
 };
 

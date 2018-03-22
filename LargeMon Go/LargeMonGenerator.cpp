@@ -17,11 +17,10 @@ bool LargeMonGenerator::generateLargeMon()
 	// Generate name (While loop forces new generation until name is unique)
 	uniform_real_distribution<double> randSuffix(0, Containers::suffix.size());
 	string name = type + Containers::suffix.at(int(randSuffix(generator)));
-	while (AllLargeMons::nameUnique("Test") == false)
+	while (AllLargeMons::nameUnique(name) == false)
 	{
 		uniform_real_distribution<double> randSuffix(0, Containers::suffix.size());
 		name = type + Containers::suffix.at(int(randSuffix(generator)));
-		return false;
 	}
 	// Geneate size
 	uniform_real_distribution<double> randSize(1, 5);
@@ -39,6 +38,6 @@ bool LargeMonGenerator::generateLargeMon()
 	// Select antagonist, based on type from map stored in Containers
 	string antagonist = Containers::antagonists.at(type);
 	// Generate completed LargeMon, with relevant parameters, appending it to the list of all LargeMons
-	AllLargeMons::allLargeMons.push_back(*new LargeMon(type, "Test", desc, antagonist, size, attack, health));
+	AllLargeMons::allLargeMons.push_back(*new LargeMon(type, name, desc, antagonist, size, attack, health));
 	return true;
 }

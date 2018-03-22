@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Initialisaing the vector that will contain all LargeMons
+// Initialising the vector that will contain all LargeMons
 vector<LargeMon> AllLargeMons::allLargeMons;
 
 // Deletes all LargeMons
@@ -42,6 +42,7 @@ bool AllLargeMons::nameUnique(string name)
 	return true;
 }
 
+// Can be used to check if there are no currently generated LargeMons
 bool AllLargeMons::noLargeMons()
 {
 	if (AllLargeMons::allLargeMons.empty())

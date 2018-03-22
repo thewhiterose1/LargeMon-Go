@@ -19,8 +19,9 @@ int main()
 		cout << "Bad";
 	}
 	bool temp = LargeMonGenerator::generateLargeMon();
+	bool temp2 = LargeMonGenerator::generateLargeMon();
 	cout << AllLargeMons::allLargeMons[0].getName();
-	cout << AllLargeMons::allLargeMons[0].getName();
+	cout << AllLargeMons::allLargeMons[1].getName();
 	int boop;
 	cin >> boop;
     return 0;
