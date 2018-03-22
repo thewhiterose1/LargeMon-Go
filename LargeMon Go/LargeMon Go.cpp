@@ -2,10 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "LargeMon.h"
-#include "LargeMonGenerator.h"
-#include "Containers.h"
-#include "AllLargeMons.h"
+#include "MenuUI.h"
 
 #include <iostream>
 
@@ -13,16 +10,6 @@ using namespace std;
 
 int main()
 {
-	// Setup
-	if (LargeMonGenerator::generateLargeMon() == false)
-	{
-		cout << "Bad";
-	}
-	bool temp = LargeMonGenerator::generateLargeMon();
-	bool temp2 = LargeMonGenerator::generateLargeMon();
-	cout << AllLargeMons::allLargeMons[0].getName();
-	cout << AllLargeMons::allLargeMons[1].getName();
-	int boop;
-	cin >> boop;
+	MenuUI* menu = new MenuUI();
     return 0;
 }
