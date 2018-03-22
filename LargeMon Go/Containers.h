@@ -7,7 +7,7 @@ using namespace std;
 class Containers
 {
 public:
-	virtual void foo() = 0;
+	virtual void foo() = 0; // Designates abstract class
 	// A collection of suffixes to be appended to LargeMon's type upon generation
 	static const vector<string> suffix;
 	// A vector contianing all possible LargeMon types
