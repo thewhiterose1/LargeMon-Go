@@ -6,24 +6,19 @@
 
 using namespace std;
 
-LargeMonGenerator::LargeMonGenerator()
-{
-}
-
-LargeMonGenerator::~LargeMonGenerator()
-{
-}
-
 bool LargeMonGenerator::generateLargeMon()
 {
 	// Generate type
-
+	
 	// Generate name
 	
 	// Generate health
 	srand(time(NULL));
 	int nhealth = rand() % 10 + 1;
-	// Generate completed LargeMon
+
+	// Generate base attack
+
+	// Generate completed LargeMon, with relevant parameters
 	LargeMon* tempMon = new LargeMon(nhealth);
 	return true;
 }

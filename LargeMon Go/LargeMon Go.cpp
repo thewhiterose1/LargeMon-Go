@@ -10,6 +10,7 @@ using namespace std;
 
 int main()
 {
+	Containers* containerSetup = new Containers();
 	LargeMon* myLargeMon = new LargeMon("Fire", "Fire Large Mon", "A powerful fire LargeMon", "Water", 2, 20, 200);
 	cout << myLargeMon->getHealth();
 	LargeMonGenerator::generateLargeMon();

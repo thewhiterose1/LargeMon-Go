@@ -20,11 +20,6 @@ public:
 	LargeMon();
 	LargeMon(int);
 	~LargeMon();
-	map<char, char> anatagonists = {
-		{ 'F', 'W' },
-		{ 'W', 'F' },
-		{ 'A', 'W' }
-	};
 	string getName();
 	string getType();
 	string getDescription();

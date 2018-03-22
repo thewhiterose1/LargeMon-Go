@@ -41,13 +41,12 @@ int LargeMon::getAttackPoints() { return attackPoints; }
 
 int LargeMon::getHealth() { return health; }
 
-// Deconstructor
-
 string LargeMon::getAntagonist()
 {
 	return antagonist;
 }
 
+// Deconstructor
 
 LargeMon::~LargeMon()
 {
