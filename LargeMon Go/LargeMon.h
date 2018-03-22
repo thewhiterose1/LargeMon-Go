@@ -17,7 +17,6 @@ class LargeMon
 {
 public:
 	LargeMon(string, string, string, string, int, int, int);
-	LargeMon(int);
 	~LargeMon();
 	string getName();
 	string getType();

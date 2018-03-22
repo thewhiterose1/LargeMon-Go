@@ -1,6 +1,5 @@
 #include "stdafx.h"
 #include "LargeMon.h"
-#include <string>
 
 using namespace std;
 
@@ -14,11 +13,6 @@ LargeMon::LargeMon(string ntype, string nname, string ndescription, string nanta
 	antagonist = nantagonist;
 	size = nsize;
 	attackPoints = nattackPoints;
-	health = nhealth;
-}
-
-LargeMon::LargeMon(int nhealth)
-{
 	health = nhealth;
 }
 

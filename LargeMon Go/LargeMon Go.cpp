@@ -13,11 +13,10 @@ using namespace std;
 int main()
 {
 	// Setup
-	LargeMon* myLargeMon = new LargeMon("Fire", "Fire Large Mon", "A powerful fire LargeMon", "Water", 2, 20, 200);
-	cout << myLargeMon->getHealth();
-	LargeMonGenerator::generateLargeMon();
+	LargeMon* testLargeMon = LargeMonGenerator::generateLargeMon();
+	cout << testLargeMon->getDescription();
+	cout << testLargeMon->getAntagonist();
 	int boop;
-	cout << Containers::types.at(1);
 	cin >> boop;
     return 0;
 }
