@@ -1,5 +1,3 @@
-#include "LargeMon.h"
-
 class LargeMonGenerator
 {
 public:

@@ -17,11 +17,6 @@ LargeMon::LargeMon(string ntype, string nname, string ndescription, string nanta
 	health = nhealth;
 }
 
-LargeMon::LargeMon()
-{
-
-}
-
 LargeMon::LargeMon(int nhealth)
 {
 	health = nhealth;
@@ -46,7 +41,7 @@ string LargeMon::getAntagonist()
 	return antagonist;
 }
 
-// Deconstructor
+// Destructor
 
 LargeMon::~LargeMon()
 {
