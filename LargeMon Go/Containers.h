@@ -8,9 +8,7 @@ class Containers
 {
 public:
 	virtual void foo() = 0;
-	// Types of LargeMon to act as prefix when generating name
-	static const vector<string> prefix;
-	// A collection of suffixes to be appended to LargeMon's prefix upon generation
+	// A collection of suffixes to be appended to LargeMon's type upon generation
 	static const vector<string> suffix;
 	// A vector contianing all possible LargeMon types
 	static const vector<string> types;

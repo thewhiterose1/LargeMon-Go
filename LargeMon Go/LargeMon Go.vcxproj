@@ -145,6 +145,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AllLargeMons.h" />
     <ClInclude Include="Containers.h" />
     <ClInclude Include="LargeMon.h" />
     <ClInclude Include="LargeMonGenerator.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AllLargeMons.cpp" />
     <ClCompile Include="Containers.cpp" />
     <ClCompile Include="LargeMon Go.cpp" />
     <ClCompile Include="LargeMon.cpp" />

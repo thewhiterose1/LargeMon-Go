@@ -5,6 +5,7 @@
 #include "LargeMon.h"
 #include "LargeMonGenerator.h"
 #include "Containers.h"
+#include "AllLargeMons.h"
 
 #include <iostream>
 
@@ -13,9 +14,8 @@ using namespace std;
 int main()
 {
 	// Setup
-	LargeMon* testLargeMon = LargeMonGenerator::generateLargeMon();
-	cout << testLargeMon->getDescription();
-	cout << testLargeMon->getAntagonist();
+	bool temp = LargeMonGenerator::generateLargeMon();
+	cout << AllLargeMons::allLargeMons[0].getName();
 	int boop;
 	cin >> boop;
     return 0;
