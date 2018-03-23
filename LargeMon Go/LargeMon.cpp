@@ -39,6 +39,12 @@ string LargeMon::getAntagonist()
 	return antagonist;
 }
 
+// Does damage to LargeMons health
+void LargeMon::doDamage(int damage)
+{
+	health -= damage;
+}
+
 // Destructor
 
 LargeMon::~LargeMon()

@@ -6,9 +6,12 @@
 
 using namespace std;
 
+MenuUI MenuUI::theMenu;
+
 // Constuctor, immediately calls mainMenu UI function
 MenuUI::MenuUI()
 {
+	theMenu = *this;
 	mainMenu();
 }
 
@@ -31,16 +34,16 @@ void MenuUI::mainMenu()
 	{
 		case '1':
 			if (LargeMonGenerator::generateLargeMon() == false) cout << "Error!\n";
-			MenuUI::mainMenu();
+			mainMenu();
 		case '2':
-			MenuUI::viewLargeMons();
+			viewLargeMons();
 		case '3': 
-			MenuUI::battleMenu();
+			battleMenu();
 		case '4': 
 			exit(0);
 		default:
 			cout << "Sorry - your command was not recognised. Try again.";
-			MenuUI::mainMenu();
+			mainMenu();
 	}
 }
 
@@ -62,7 +65,7 @@ void MenuUI::viewLargeMons()
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cin.sync();
 	// Returns to main menu
-	if (input == '0') MenuUI::mainMenu();
+	if (input == '0') mainMenu();
 	// Determines whether user is trying to delete a LargeMon, or indicates an invalid command was entered
 	try {
 		int indexDel = input - '0';
@@ -70,7 +73,7 @@ void MenuUI::viewLargeMons()
 		{
 			AllLargeMons::deleteByName(AllLargeMons::allLargeMons[indexDel-1].getName());
 		}
-		MenuUI::viewLargeMons();
+		viewLargeMons();
 	}
 	catch (int e)
 	{
@@ -95,12 +98,13 @@ void MenuUI::battleMenu()
 	cin >> input;
 	cin.ignore(numeric_limits<streamsize>::max(), '\n');
 	cin.sync();
+	if (input == '0') mainMenu();
 	// If the user has selected a valid LargeMon, setup a Battle against a random LargeMon AI
 	try {
 		int indexLargeMon = input - '0';
 		if (indexLargeMon <= count && indexLargeMon > 0)
 		{
-			Battle* battle = new Battle(AllLargeMons::allLargeMons[count - 1]);
+			Battle* battle = new Battle(AllLargeMons::allLargeMons[indexLargeMon - 1]);
 		}
 	}
 	catch (int e)

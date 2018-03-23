@@ -26,6 +26,7 @@ public:
 	int getSize();
 	int getAttackPoints();
 	int getHealth();
+	void doDamage(int);
 private:
 	string name;
 	string description;

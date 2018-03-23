@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "Battle.h"
 #include "AllLargeMons.h"
+#include "MenuUI.h"
+#include "Turn.h"
 
 using namespace std;
 
@@ -19,12 +21,33 @@ Battle::Battle(LargeMon npLargeMon)
 	cout << "\nYOUR LARGEMON: " + pLargeMon.getDescription();
 	cout << "\nENEMY LARGEMON: " + eLargeMon.getDescription();
 
+	cout << eLargeMon.getHealth();
+	// While neither LargeMon is dead, repeat turns
 	while (pLargeMon.getHealth() >= 0 && eLargeMon.getHealth() >= 0)
 	{
-
+		cout << "Pew pew\n";
+		Turn* pTurn = new Turn(pLargeMon, eLargeMon);
 	}
-	int i;
-	cin >> i;
+	// Determine winner and return to main menu
+	if (pLargeMon.getHealth() <= 0)
+	{
+		cout << "\n\nYou have lost!";
+	}
+	else
+	{
+		cout << "\n\nYou have won!";
+	}
+	char input;
+	cin >> input;
+	cin.ignore(numeric_limits<streamsize>::max(), '\n');
+	cin.sync();
+	MenuUI::theMenu.mainMenu();
+}
+
+// Output relevant information to log file
+void Battle::saveLogFile()
+{
+
 }
 
 // Destructor

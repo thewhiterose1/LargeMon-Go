@@ -8,6 +8,8 @@ class MenuUI
 public:
 	MenuUI();
 	~MenuUI();
+	// For singleton, contains reference to main menu object
+	static MenuUI theMenu;
 	// Main Menu function
 	void mainMenu();
 	// Displays all LargeMons generated description

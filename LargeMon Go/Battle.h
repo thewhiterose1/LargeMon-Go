@@ -11,6 +11,7 @@ public:
 	~Battle();
 	char turn;
 	int turnCount;
+	bool canSpecial;
 	LargeMon pLargeMon;
 	LargeMon eLargeMon;
 	void saveLogFile();
