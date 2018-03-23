@@ -2,7 +2,8 @@
 #include "Battle.h"
 #include "AllLargeMons.h"
 #include "MenuUI.h"
-#include "Turn.h"
+#include "PTurn.h"
+#include "AITurn.h"
 
 using namespace std;
 
@@ -21,12 +22,11 @@ Battle::Battle(LargeMon npLargeMon)
 	cout << "\nYOUR LARGEMON: " + pLargeMon.getDescription();
 	cout << "\nENEMY LARGEMON: " + eLargeMon.getDescription();
 
-	cout << eLargeMon.getHealth();
 	// While neither LargeMon is dead, repeat turns
 	while (pLargeMon.getHealth() >= 0 && eLargeMon.getHealth() >= 0)
 	{
-		cout << "Pew pew\n";
-		Turn* pTurn = new Turn(pLargeMon, eLargeMon);
+		PTurn* pTurn = new PTurn(pLargeMon, eLargeMon);
+		AITurn* eTurn = new AITurn(eLargeMon, pLargeMon);
 	}
 	// Determine winner and return to main menu
 	if (pLargeMon.getHealth() <= 0)

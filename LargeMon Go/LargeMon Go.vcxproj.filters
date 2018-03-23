@@ -45,6 +45,12 @@
     <ClInclude Include="Turn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PTurn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AITurn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -72,6 +78,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Turn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PTurn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AITurn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

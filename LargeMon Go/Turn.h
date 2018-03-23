@@ -12,7 +12,6 @@ public:
 	// Storing LargeMons on given turn
 	LargeMon* mLargeMon;
 	LargeMon* eLargeMon;
-private:
 	// Possible actions
 	void simpleAttack(LargeMon &, LargeMon &);
 	void specialAttack(LargeMon &, LargeMon &);

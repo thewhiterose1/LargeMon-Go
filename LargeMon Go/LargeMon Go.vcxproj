@@ -145,17 +145,20 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AITurn.h" />
     <ClInclude Include="AllLargeMons.h" />
     <ClInclude Include="Battle.h" />
     <ClInclude Include="Containers.h" />
     <ClInclude Include="LargeMon.h" />
     <ClInclude Include="LargeMonGenerator.h" />
     <ClInclude Include="MenuUI.h" />
+    <ClInclude Include="PTurn.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Turn.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AITurn.cpp" />
     <ClCompile Include="AllLargeMons.cpp" />
     <ClCompile Include="Battle.cpp" />
     <ClCompile Include="Containers.cpp" />
@@ -163,6 +166,7 @@
     <ClCompile Include="LargeMon.cpp" />
     <ClCompile Include="LargeMonGenerator.cpp" />
     <ClCompile Include="MenuUI.cpp" />
+    <ClCompile Include="PTurn.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

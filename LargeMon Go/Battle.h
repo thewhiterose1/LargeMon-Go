@@ -1,5 +1,3 @@
-#pragma once
-
 #include "LargeMon.h"
 #include <iostream>
 #include <string>
