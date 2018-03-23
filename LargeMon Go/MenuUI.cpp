@@ -2,6 +2,7 @@
 #include "MenuUI.h"
 #include "LargeMonGenerator.h"
 #include "AllLargeMons.h"
+#include "Battle.h"
 
 using namespace std;
 
@@ -99,7 +100,7 @@ void MenuUI::battleMenu()
 		int indexLargeMon = input - '0';
 		if (indexLargeMon <= count && indexLargeMon > 0)
 		{
-			AllLargeMons::allLargeMons[count - 1];
+			Battle* battle = new Battle(AllLargeMons::allLargeMons[count - 1]);
 		}
 	}
 	catch (int e)

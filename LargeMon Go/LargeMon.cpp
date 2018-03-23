@@ -16,6 +16,10 @@ LargeMon::LargeMon(string ntype, string nname, string ndescription, string nanta
 	health = nhealth;
 }
 
+LargeMon::LargeMon()
+{
+}
+
 // Getter methods
 
 string LargeMon::getType() { return type; }

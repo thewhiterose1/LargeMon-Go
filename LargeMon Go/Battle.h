@@ -1,9 +1,18 @@
 #pragma once
+
+#include "LargeMon.h"
+#include <iostream>
+#include <string>
+
 class Battle
 {
 public:
-	Battle();
+	Battle(LargeMon);
 	~Battle();
-	enum Turn { PTURN, AITURN };
+	char turn;
+	int turnCount;
+	LargeMon pLargeMon;
+	LargeMon eLargeMon;
+	void saveLogFile();
 };
 

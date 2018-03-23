@@ -1,6 +1,7 @@
 #include "LargeMon.h"
 #include <vector>
 #include <string>
+#include <random>
 
 class AllLargeMons
 {
@@ -11,5 +12,6 @@ public:
 	static bool deleteByName(string);
 	static bool nameUnique(string);
 	static bool noLargeMons();
+	static LargeMon selectRandLargeMon();
 };
 

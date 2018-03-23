@@ -51,3 +51,14 @@ bool AllLargeMons::noLargeMons()
 	}
 	return false;
 }
+
+// Returns a random LargeMon from the list
+LargeMon AllLargeMons::selectRandLargeMon()
+{
+	// Random generation engine
+	random_device rd;
+	default_random_engine generator(rd());
+	// Generate type
+	uniform_real_distribution<double> randLargeMon(0, AllLargeMons::allLargeMons.size());
+	return AllLargeMons::allLargeMons.at(int(randLargeMon(generator)));
+}
