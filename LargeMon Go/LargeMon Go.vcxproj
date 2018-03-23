@@ -146,6 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AllLargeMons.h" />
+    <ClInclude Include="Battle.h" />
     <ClInclude Include="Containers.h" />
     <ClInclude Include="LargeMon.h" />
     <ClInclude Include="LargeMonGenerator.h" />
@@ -155,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AllLargeMons.cpp" />
+    <ClCompile Include="Battle.cpp" />
     <ClCompile Include="Containers.cpp" />
     <ClCompile Include="LargeMon Go.cpp" />
     <ClCompile Include="LargeMon.cpp" />

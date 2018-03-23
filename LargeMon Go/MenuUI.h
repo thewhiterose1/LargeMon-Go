@@ -12,5 +12,7 @@ public:
 	void mainMenu();
 	// Displays all LargeMons generated description
 	void viewLargeMons();
+	// Displays the battle setup screen
+	void battleMenu();
 };
 
