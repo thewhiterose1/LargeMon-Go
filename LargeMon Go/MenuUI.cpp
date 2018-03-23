@@ -88,6 +88,7 @@ void MenuUI::battleMenu()
 	cout << "\t\t -- PLAY BATTLE --\n\n";
 	cout << "You have chosen to play a battle! Pick the LargeMon YOU wish to fight with below by pressing the corresponding number key!\n\n";
 	int count = 0;
+	// Prints out LargeMons that exist
 	for (LargeMon ele : AllLargeMons::allLargeMons)
 	{
 		count++;

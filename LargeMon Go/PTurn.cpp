@@ -14,6 +14,7 @@ PTurn::PTurn(LargeMon &nmLargeMon, LargeMon &neLargeMon) : Turn(nmLargeMon, neLa
 	cout << "\nIt's your turn! What move would you like to do?\n\n";
 	cout << "1. Simple Attack\n";
 	cout << "2. Defence\n";
+	// If allowed to do special attack, give the option
 	if (Battle::pCanSpecial == true) { cout << "3. Special Attack\n"; }
 	char input;
 	cin >> input;

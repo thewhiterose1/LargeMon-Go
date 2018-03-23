@@ -7,11 +7,10 @@
 
 using namespace std;
 
-char turn = 'P';
-int Battle::turnCount = 1;
-bool Battle::eCanSpecial = false;
-bool Battle::pCanSpecial = false;
-string Battle::turnText = "";
+int Battle::turnCount = 1; // Tracks turn count
+bool Battle::eCanSpecial = false; // Enemy can special attack
+bool Battle::pCanSpecial = false; // Player can special attack
+string Battle::turnText = ""; // Text to act as log to screen and file
 
 // Constructor
 Battle::Battle(LargeMon npLargeMon)
@@ -22,6 +21,7 @@ Battle::Battle(LargeMon npLargeMon)
 	// Initialising player, enemy LargeMon
 	LargeMon pLargeMon = npLargeMon;
 	LargeMon eLargeMon = AllLargeMons::selectRandLargeMon();
+	// Sets up antagonist variables, to allow special attack
 	if (pLargeMon.getType() == eLargeMon.getAntagonist()) Battle::pCanSpecial = true; 
 	if (eLargeMon.getType() == pLargeMon.getAntagonist()) Battle::eCanSpecial = true;
 	cout << "\nYOUR LARGEMON: " + pLargeMon.getDescription();
@@ -53,11 +53,11 @@ Battle::Battle(LargeMon npLargeMon)
 	MenuUI::theMenu.mainMenu();
 }
 
-// Output relevant information to log file
+// Output relevant information to log file, appending each time called
 void Battle::saveLogFile()
 {
 	ofstream logFile;
-	logFile.open("test.txt", std::ios::out | std::ios::app);
+	logFile.open("BattleLog.txt", std::ios::out | std::ios::app);
 	logFile << Battle::turnText << std::endl;
 }
 

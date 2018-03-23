@@ -16,7 +16,7 @@ AITurn::AITurn(LargeMon &nmLargeMon, LargeMon &neLargeMon) : Turn(nmLargeMon, ne
 		Battle::eCanSpecial = false;
 		return;
 	}
-	// If AI WILL die from enemies simple attack next turn, heal
+	// If AI will die from enemies simple attack next turn, heal
 	if (mLargeMon->getHealth() - eLargeMon->getAttackPoints() <= 0)
 	{
 		Battle::turnText.append("Defence\n");
