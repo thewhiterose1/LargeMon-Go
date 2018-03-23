@@ -2,34 +2,21 @@
     CONSOLE APPLICATION : LargeMon Go Project Overview
 ========================================================================
 
-AppWizard has created this LargeMon Go application for you.
+My Object Oriented Systems Development assignemnt module - LargeMon Project.
 
-This file contains a summary of what you will find in each of the files that
-make up your LargeMon Go application.
-
-
-LargeMon Go.vcxproj
-    This is the main project file for VC++ projects generated using an Application Wizard.
-    It contains information about the version of Visual C++ that generated the file, and
-    information about the platforms, configurations, and project features selected with the
-    Application Wizard.
-
-LargeMon Go.vcxproj.filters
-    This is the filters file for VC++ projects generated using an Application Wizard. 
-    It contains information about the association between the files in your project 
-    and the filters. This association is used in the IDE to show grouping of files with
-    similar extensions under a specific node (for e.g. ".cpp" files are associated with the
-    "Source Files" filter).
-
-LargeMon Go.cpp
-    This is the main application source file.
+GOALS:
+	- To develop a game loosely based on Pokemon Go
+	- Includes a generation module for generating random LargeMons
+	- Includes a turn based battle system for playing against the AI
+	- Utilise features of C++ such as pointers, address references
+	- Log to output file each turn
 
 /////////////////////////////////////////////////////////////////////////////
-Other standard files:
+Development Information:
 
-StdAfx.h, StdAfx.cpp
-    These files are used to build a precompiled header (PCH) file
-    named LargeMon Go.pch and a precompiled types file named StdAfx.obj.
+Author: thewhiterose1
+Date of Completition: 23/03/2018
+Languages: C, C++
 
 /////////////////////////////////////////////////////////////////////////////
 Other notes:
