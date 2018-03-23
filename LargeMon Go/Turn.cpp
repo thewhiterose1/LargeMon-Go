@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Turn.h"
+#include "Battle.h"
 
 using namespace std;
 
@@ -34,7 +35,12 @@ void Turn::specialAttack(LargeMon &mLargeMon, LargeMon &eLargeMon)
 void Turn::defence(LargeMon &mLargeMon)
 {
 	// Heals the turn takers LargeMon, negative value will cause healing due to --
-	mLargeMon.doDamage(-10);
+	// Randomises healing slightly
+	random_device rd;
+	default_random_engine generator(rd());
+	uniform_real_distribution<double> healEffect(5, 12);
+	// Random double between 0.95 and 1.50 * base attack of turn takers LargeMon
+	mLargeMon.doDamage(-int(healEffect(generator)));
 }
 
 // Destructor
